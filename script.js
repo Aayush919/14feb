@@ -1278,13 +1278,11 @@ elf.to(".elf h5 .elf1", {
 
     }
    
-  }).to(".elf h5", {
-
+  }).to(".elf h5", { 
     top: '48%',
     scale: 0.6,
     duration: 10,
     fontWeight: 400,
-    ease: "sine.out",
     scrollTrigger: {
       trigger: ".elf h5",
       scroller: "#main",
@@ -1296,7 +1294,6 @@ elf.to(".elf h5 .elf1", {
     onComplete: function () {
       gsap.to('.elf h5', {
         top: '46%',
-        ease: "sine.out",
         scrollTrigger: {
           trigger: ".elf h5",
           scroller: "#main",
@@ -1319,8 +1316,11 @@ bns.to(".bns h5 .bns1", {
     trigger: ".bns h5",
     scroller: "#main",
     scrub: 1,
-    start: '500% -4300%',
-    end: '500% -4800%',
+    start: '29500% top',
+    end: '29500% -400%',
+    markers:true,
+    // start: '500% -4300%',
+    // end: '500% -4800%',
   }
 })
   .to(".bns h5 .bns2", {
@@ -1331,8 +1331,8 @@ bns.to(".bns h5 .bns1", {
       trigger: ".bns h5",
       scroller: "#main",
       scrub: 1,
-      start: '500% -4320%',
-      end: '500% -4820%',
+      start: '29600% top',
+    end: '29500% -400%',
     }
   })
   .to(".bns h5 .bns3", {
@@ -1343,8 +1343,8 @@ bns.to(".bns h5 .bns1", {
       trigger: ".bns h5",
       scroller: "#main",
       scrub: 1,
-      start: '500% -4340%',
-      end: '500% -4840%',
+      start: '29700% top',
+      end: '29500% -400%',
     }
   }).to(".bns h5 .bns4", {
     transform: "translateX(0vw)",
@@ -1354,8 +1354,8 @@ bns.to(".bns h5 .bns1", {
       trigger: ".bns h5",
       scroller: "#main",
       scrub: 1,
-      start: '500% -4360%',
-      end: '500% -4860%',
+      start: '29800% top',
+      end: '29500% -400%',
     }
   }).to(".bns h5 .bns5", {
     transform: "translateX(0vw)",
@@ -1365,8 +1365,8 @@ bns.to(".bns h5 .bns1", {
       trigger: ".bns h5",
       scroller: "#main",
       scrub: 1,
-      start: '500% -4380%',
-      end: '500% -4880%',
+      start: '29900% top',
+      end: '29500% -400%',
     }
   })
   .to(".bns h5 .bns6", {
@@ -1377,8 +1377,8 @@ bns.to(".bns h5 .bns1", {
       trigger: ".bns h5",
       scroller: "#main",
       scrub: 1,
-      start: '500% -4400%',
-      end: '500% -4900%',
+      start: '30000% top',
+      end: '29500% -400%',
     }
   }).to(".bns h5 .bns7", {
     transform: "translateX(0vw)",
@@ -1388,8 +1388,8 @@ bns.to(".bns h5 .bns1", {
       trigger: ".bns h5",
       scroller: "#main",
       scrub: 1,
-      start: '500% -4420%',
-      end: '500% -4920%',
+      start: '30100% top',
+      end: '29500% -400%',
     }
   }).to(".bns h5 .bns8", {
     transform: "translateX(0vw)",
@@ -1399,8 +1399,8 @@ bns.to(".bns h5 .bns1", {
       trigger: ".bns h5",
       scroller: "#main",
       scrub: 1,
-      start: '500% -4440%',
-      end: '500% -4940%',
+      start: '30200% top',
+      end: '29500% -400%',
     }
   }).to(".bns h5 .bns8", {
     transform: "translateX(0vw)",
@@ -1409,9 +1409,10 @@ bns.to(".bns h5 .bns1", {
     scrollTrigger: {
       trigger: ".bns h5",
       scroller: "#main",
-      scrub: 1,
-      start: '500% -4440%',
-      end: '500% -4940%',
+      scrub: 1, 
+       start: '30300% top',
+      end: '29500% -400%',
+   
     }
     , onComplete: () => {
       console.log('animation end')
@@ -1424,8 +1425,8 @@ bns.to(".bns h5 .bns1", {
       trigger: ".bns h5",
       scroller: "#main",
       scrub: 1,
-      start: '500% -4940%',
-      end: '500% -5340%',
+      start: '31000% top',
+      end: '32000% -400%',
       markers: true,
     }
   })
@@ -1443,8 +1444,8 @@ sw.to(".sw h5 .sw1", {
     trigger: ".sw h5",
     scroller: "#main",
     scrub: 1,
-    start: '500% -4300%',
-    end: '500% -5400%',
+    start: '29700% top',
+    end: '29500% -400%',
   }
 })
 .to(".sw h5 .sw2", {
@@ -1455,8 +1456,8 @@ sw.to(".sw h5 .sw1", {
     trigger: ".sw h5",
     scroller: "#main",
     scrub: 1,
-    start: '500% -4320%',
-    end: '500% -5420%',
+    start: '29800% top',
+    end: '29500% -400%',
   }
 })
 .to(".sw h5 .sw3", {
@@ -1467,8 +1468,8 @@ sw.to(".sw h5 .sw1", {
     trigger: ".sw h5",
     scroller: "#main",
     scrub: 1,
-    start: '500% -4340%',
-    end: '500% -5440%',
+    start: '29900% top',
+    end: '29500% -400%',
   }
 }).to(".sw h5 .sw4", {
   transform: "translateX(0vw)",
@@ -1478,8 +1479,8 @@ sw.to(".sw h5 .sw1", {
     trigger: ".sw h5",
     scroller: "#main",
     scrub: 1,
-    start: '500% -4360%',
-    end: '500% -5460%',
+    start: '30000% top',
+    end: '29500% -400%',
   }
 }).to(".sw h5 .sw5", {
   transform: "translateX(0vw)",
@@ -1489,8 +1490,8 @@ sw.to(".sw h5 .sw1", {
     trigger: ".sw h5",
     scroller: "#main",
     scrub: 1,
-    start: '500% -4380%',
-    end: '500% -5480%',
+    start: '30100% top',
+    end: '29500% -400%',
   }
 }).to(".sw h5 .sw6", {
   transform: "translateX(0vw)",
@@ -1500,8 +1501,8 @@ sw.to(".sw h5 .sw1", {
     trigger: ".sw h5",
     scroller: "#main",
     scrub: 1,
-    start: '500% -4400%',
-    end: '500% -5500%',
+    start: '30200% top',
+    end: '29500% -400%',
   }
 }).to(".sw h5 .sw7", {
   transform: "translateX(0vw)",
@@ -1511,8 +1512,8 @@ sw.to(".sw h5 .sw1", {
     trigger: ".sw h5",
     scroller: "#main",
     scrub: 1,
-    start: '500% -4420%',
-    end: '500% -5520%',
+    start: '30300% top',
+    end: '29500% -400%',
   }
 }).to(".sw h5 .sw8", {
   transform: "translateX(0vw)",
@@ -1522,8 +1523,8 @@ sw.to(".sw h5 .sw1", {
     trigger: ".sw h5",
     scroller: "#main",
     scrub: 1,
-    start: '500% -4440%',
-    end: '500% -5540%',
+    start: '30400% top',
+    end: '29500% -400%',
   }
 }).to(".sw h5 .sw9", {
   transform: "translateX(0vw)",
@@ -1533,8 +1534,8 @@ sw.to(".sw h5 .sw1", {
     trigger: ".sw h5",
     scroller: "#main",
     scrub: 1,
-    start: '500% -4460%',
-    end: '500% -5560%',
+    start: '30500% top',
+    end: '29500% -400%',
   }
 }).to(".sw h5", {
   top: '64%',

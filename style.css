@@ -755,7 +755,7 @@ body {
 }
 
 .sw h5 {
-  top: 80%;
+  top: 85%;
   position: absolute;
   transform: translateX(81%);
   font-size: 6vw;
