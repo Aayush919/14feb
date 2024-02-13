@@ -1,0 +1,821 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+
+/* navbar */
+.nav {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 22px 115px;
+  color: #69467e;
+  font-weight: 700;
+  font-family: gilroy;
+  font-size: 1vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999999;
+  text-transform: uppercase;
+}
+
+/* nav bar psquare company */
+.nav .pc {
+  position: absolute;
+  right: 10%;
+  opacity: 1;
+  transition: ease / 1s;
+}
+
+/* nav bar contact */
+
+.nav .contact {
+  position: absolute;
+  right: 15%;
+  opacity: 0;
+  transition: ease 0.5s;
+}
+
+/* Hero page whith 200vh height and linear gradient */
+.hero {
+  height: 200vh;
+  width: 100%;
+  background: transparent linear-gradient(197deg, #ece7e100 0%, #82638f57 35%, #330152 100%) 0% 0% no-repeat padding-box;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* simplyfying h1 tag */
+
+.hero h1 {
+  position: absolute;
+  top: 14%;
+  left: 27%;
+  text-align: center;
+  line-height: 7vw;
+  color: #69467e;
+  letter-spacing: 2px;
+  font-size: 7vw;
+  text-transform: uppercase;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* success h2 tag */
+.hero h2 {
+  font-family: gilroy;
+  font-size: 6vw;
+  color: #330152;
+  position: absolute;
+  top: 21%;
+  left: 37%;
+  text-transform: uppercase;
+  z-index: -9;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  
+}
+
+.page2 {
+  height: 6500vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #ECE7E100;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #ECE7E100;
+}
+
+.overlay .p2h1 {
+  position: absolute;
+  top: -19%;
+  color: #330152;
+  left: 26%;
+  font-size: 7vw;
+  text-align: center;
+  line-height: 7vw;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+.overlay .first {
+  position: absolute;
+  top: 52%;
+  left: 26%;
+  font-size: 7vw;
+  color: #330152;
+  line-height: 7vw;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+
+
+
+.page3 {
+  height: 100vh;
+  background-color: red;
+  width: 100%;
+}
+
+
+
+
+.bottom-text {
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+}
+
+.bottom-text h2 {
+  top: 42%;
+  position: absolute;
+  transform: translateX(50%);
+  font-size: 5vw;
+  text-transform: uppercase;
+  color: #330152;
+  text-transform: uppercase;
+  opacity: 1;
+  letter-spacing: 3px;
+  white-space: nowrap;
+  color: #330152;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bottom-text span {
+  display: inline-block;
+}
+
+.bottom-text h2 .one {
+  opacity: 0;
+  transform: translateX(68vw);
+}
+
+
+.bottom-text h2 .two {
+  opacity: 0;
+  transform: translateX(64vw);
+}
+
+.bottom-text h2 .three {
+  opacity: 0;
+  transform: translateX(60vw);
+}
+
+.bottom-text h2 .four {
+  opacity: 0;
+  transform: translateX(56vw);
+}
+
+.bottom-text h2 .five {
+  opacity: 0;
+  transform: translateX(52vw);
+}
+
+.bottom-text h2 .six {
+  opacity: 0;
+  transform: translateX(48vw);
+}
+
+.bottom-text h2 .seven {
+  opacity: 0;
+  transform: translateX(44vw);
+}
+
+.bottom-text h2 .eight {
+  opacity: 0;
+  transform: translateX(40vw);
+}
+
+.bottom-text h2 .nine {
+  opacity: 0;
+  transform: translateX(36vw);
+}
+
+.bottom-text h2 .ten {
+  opacity: 0;
+  transform: translateX(32vw);
+}
+
+.bottom-text h2 .eleven {
+  opacity: 0;
+  transform: translateX(28vw);
+}
+
+.db {
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+
+}
+
+.db h3 {
+  top: 56%;
+  position: absolute;
+  transform: translateX(46vw);
+  font-size: 5vw;
+  text-transform: uppercase;
+  color: #330152;
+  text-transform: uppercase;
+  opacity: 1;
+  letter-spacing: 3px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.db h3 span {
+  display: inline-block;
+}
+
+.db h3 .one1 {
+  opacity: 0;
+  transform: translateX(52vw);
+}
+
+.db h3 .two2 {
+  opacity: 0;
+  transform: translateX(49vw);
+}
+
+.db h3 .three3 {
+  opacity: 0;
+  transform: translateX(46vw);
+}
+
+.db h3 .four4 {
+  opacity: 0;
+  transform: translateX(43vw);
+}
+
+.db h3 .five5 {
+  opacity: 0;
+  transform: translateX(40vw);
+}
+
+.db h3 .six6 {
+  opacity: 0;
+  transform: translateX(37vw);
+}
+
+.db h3 .seven7 {
+  opacity: 0;
+  transform: translateX(34vw);
+}
+
+.db h3 .eight8 {
+  opacity: 0;
+  transform: translateX(31vw);
+}
+
+.db h3 .nine9 {
+  opacity: 0;
+  transform: translateX(28vw);
+}
+
+.db h3 .ten10 {
+  opacity: 0;
+  transform: translateX(25vw);
+}
+
+.db h3 .eleven11 {
+  opacity: 0;
+  transform: translateX(22vw);
+}
+
+.db h3 .tw12 {
+  opacity: 0;
+  transform: translateX(19vw);
+}
+
+.th {
+
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+
+}
+
+.th h5 {
+  top: 40%;
+  position: absolute;
+  transform: translateX(73.5%);
+  font-size: 7vw;
+  text-transform: uppercase;
+  color: #330152;
+  text-transform: uppercase;
+  opacity: 1;
+  letter-spacing: 3px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+
+.th h5 span {
+  display: inline-block;
+}
+
+.th h5 .thone {
+  opacity: 0;
+  transform: translateX(58vw);
+}
+
+.th h5 .thtwo {
+  opacity: 0;
+  transform: translateX(55vw);
+}
+
+
+.th h5 .ththree {
+  opacity: 0;
+  transform: translateX(52vw);
+}
+
+.th h5 .thfour {
+  opacity: 0;
+  transform: translateX(49vw);
+}
+
+.th h5 .thfive {
+  opacity: 0;
+  transform: translateX(46vw);
+}
+
+.th h5 .thsix {
+  opacity: 0;
+  transform: translateX(46vw);
+}
+
+
+.th h5 .thseven {
+  opacity: 0;
+  transform: translateX(43vw);
+}
+
+.etu {
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+}
+
+.etu h5 {
+  top: 45%;
+  position: absolute;
+  transform: translateX(52%);
+  font-size: 7vw;
+  text-transform: uppercase;
+  color: #330152;
+  text-transform: uppercase;
+  opacity: 1;
+  letter-spacing: 3px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.etu h5 span {
+  display: inline-block;
+}
+
+.etu h5 .etuone {
+  opacity: 0;
+  transform: translateX(74vw);
+
+}
+
+
+.etu h5 .etutwo {
+  opacity: 0;
+  transform: translateX(71vw);
+
+}
+
+
+.etu h5 .etuthree {
+  opacity: 0;
+  transform: translateX(68vw);
+
+}
+
+
+.etu h5 .etufour {
+  opacity: 0;
+  transform: translateX(65vw);
+
+}
+
+.etu h5 .etufive {
+  opacity: 0;
+  transform: translateX(62vw);
+
+}
+
+
+.etu h5 .etusix {
+  opacity: 0;
+  transform: translateX(59vw);
+
+}
+
+
+.etu h5 .etuseven {
+  opacity: 0;
+  transform: translateX(56vw);
+
+}
+
+
+.etu h5 .etueight {
+  opacity: 0;
+  transform: translateX(53vw);
+
+}
+
+
+.etu h5 .etunine {
+  opacity: 0;
+  transform: translateX(50vw);
+
+}
+
+.bsp {
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+
+}
+
+.bsp h5 {
+  top: 50%;
+  position: absolute;
+  transform: translateX(84.2%);
+  font-size: 7vw;
+  text-transform: uppercase;
+  color: #330152;
+  text-transform: uppercase;
+  opacity: 1;
+  letter-spacing: 3px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bsp h5 span {
+  display: inline-block;
+}
+
+
+.bsp h5 .bspone {
+  opacity: 0;
+  transform: translateX(67vw);
+}
+
+.bsp h5 .bsptwo {
+  opacity: 0;
+  transform: translateX(62vw);
+}
+
+.bsp h5 .bspthree {
+  opacity: 0;
+  transform: translateX(57vw);
+}
+
+.bsp h5 .bspfour {
+  opacity: 0;
+  transform: translateX(52vw);
+}
+
+.bsp h5 .bspfive {
+  opacity: 0;
+  transform: translateX(47vw);
+}
+
+.bsp h5 .bspsix {
+  opacity: 0;
+  transform: translateX(42vw);
+}
+
+.bsp h5 .bspseven {
+  opacity: 0;
+  transform: translateX(37vw);
+}
+
+.elf {
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: block;
+
+  overflow: hidden;
+}
+
+.elf h5 {
+  top: 65%;
+  position: absolute;
+  transform: translateX(33.7%);
+  font-size: 6vw;
+  text-transform: uppercase;
+  color: #330152;
+  text-transform: uppercase;
+  opacity: 1;
+  letter-spacing: 3px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+.elf h5 span {
+  display: inline-block;
+}
+
+.elf h5 .elf1 {
+  opacity: 0;
+  transform: translate(80VW);
+}
+
+.elf h5 .elf2 {
+  opacity: 0;
+  transform: translate(75VW);
+}
+
+.elf h5 .elf3 {
+  opacity: 0;
+  transform: translate(70VW);
+}
+
+.elf h5 .elf4 {
+  opacity: 0;
+  transform: translate(65VW);
+}
+
+.elf h5 .elf5 {
+  opacity: 0;
+  transform: translate(60VW);
+}
+
+.elf h5 .elf6 {
+  opacity: 0;
+  transform: translate(55VW);
+}
+
+.elf h5 .elf7 {
+  opacity: 0;
+  transform: translate(50VW);
+}
+
+.elf h5 .elf8 {
+  opacity: 0;
+  transform: translate(45VW);
+}
+
+.elf h5 .elf9 {
+  opacity: 0;
+  transform: translate(40VW);
+}
+
+.elf h5 .elf10 {
+  opacity: 0;
+  transform: translate(35VW);
+}
+
+.elf h5 .elf11 {
+  opacity: 0;
+  transform: translate(33VW);
+}
+
+.elf h5 .elf12 {
+  opacity: 0;
+  transform: translate(31VW);
+}
+
+.elf h5 .elf13 {
+  opacity: 0;
+  transform: translate(29VW);
+}
+
+.elf h5 .elf14 {
+  opacity: 0;
+  transform: translate(27VW);
+}
+
+.elf h5 .elf15 {
+  opacity: 0;
+  transform: translate(20VW);
+}
+
+.elf h5 .elf16 {
+  opacity: 0;
+  transform: translate(20VW);
+}
+
+
+.bns {
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: block;
+
+  overflow: hidden;
+}
+
+.bns h5 {
+  top: 70%;
+  position: absolute;
+  transform: translateX(105.5%);
+  font-size: 6vw;
+  text-transform: uppercase;
+  color: #330152;
+  text-transform: uppercase;
+  opacity: 1;
+  letter-spacing: 3px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+.bns h5 span {
+  display: inline-block;
+}
+
+
+
+.bns h5 span {
+  display: inline-block;
+}
+
+
+
+.bns h5 .bns1 {
+  opacity: 0;
+  transform: translateX(68vw);
+}
+
+.bns h5 .bns2 {
+  opacity: 0;
+  transform: translateX(63vw);
+}
+
+.bns h5 .bns3 {
+  opacity: 0;
+  transform: translateX(58vw);
+}
+
+.bns h5 .bns4 {
+  opacity: 0;
+  transform: translateX(53vw);
+}
+
+.bns h5 .bns5 {
+  opacity: 0;
+  transform: translateX(48vw);
+}
+
+.bns h5 .bns6 {
+  opacity: 0;
+  transform: translateX(43vw);
+}
+
+.bns h5 .bns7 {
+  opacity: 0;
+  transform: translateX(40vw);
+}
+
+.bns h5 .bns8 {
+  opacity: 0;
+  transform: translateX(37vw);
+}
+
+.sw {
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+
+}
+
+.sw h5 {
+  top: 80%;
+  position: absolute;
+  transform: translateX(81%);
+  font-size: 6vw;
+  text-transform: uppercase;
+  color: #330152;
+  text-transform: uppercase;
+  opacity: 1;
+  letter-spacing: 3px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sw h5 span {
+  display: inline-block;
+}
+
+.sw h5 .sw1 {
+  opacity: 0;
+  transform: translateX(70vw);
+}
+
+.sw h5 .sw2 {
+  opacity: 0;
+  transform: translateX(67vw);
+}
+
+.sw h5 .sw3{
+  opacity: 0;
+  transform: translateX(64vw);
+}
+
+
+.sw h5 .sw4{
+  opacity: 0;
+  transform: translateX(61vw);
+}
+
+
+.sw h5 .sw5 {
+  opacity: 0;
+  transform: translateX(58vw);
+}
+
+.sw h5 .sw6 {
+  opacity: 0;
+  transform: translateX(55vw);
+}
+
+.sw h5 .sw7 {
+  opacity: 0;
+  transform: translateX(52vw);
+}
+
+.sw h5 .sw8 {
+  opacity: 0;
+  transform: translateX(49vw);
+}
+
+.sw h5 .sw9 {
+  opacity: 0;
+  transform: translateX(46vw);
+}
