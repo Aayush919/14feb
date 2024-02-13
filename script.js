@@ -224,6 +224,19 @@ firstt1.to(".page2 .overlay .first", {
       end: "19200% -400%",
     }
   })
+  .to(".page2 .overlay .first", {
+    top:'80%',
+      scrollTrigger: {
+      trigger: ".page2 .overlay .first",
+      scroller: "#main",
+      scrub: true,
+      start: "36000% top",
+      end: "36000% -1000%",
+    }
+  })
+
+
+
 //animation page2 or hero page h1
 // const s = gsap.timeline();
 
@@ -731,9 +744,10 @@ var th1 = gsap.timeline();
 
 th1.to(".th h5", {
   top: '22%',
+  // transform: "translateY(-10%)",
   scale: 0.5,
   // duration: 10,
-  // ease: "sine.out",
+  ease: "sine.out",
   scrollTrigger: {
     trigger: ".th h5",
     scroller: "#main",
@@ -755,8 +769,7 @@ th1.to(".th h5", {
       }
     });
   }
-});
-
+})
 
 
 
