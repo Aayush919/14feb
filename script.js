@@ -32,6 +32,8 @@ init();
 
 
 gsap.set(".page2 .overlay .first", { opacity: 0 })
+
+gsap.set(".page2 .overlay .second", { opacity: 0 })
 //animation nav contact nd psquare company opcatiy
 // timeline for opactiy 0 to 1 and 1 to 0 of contact and psquare company
 // const navTimeline = gsap.timeline();
@@ -150,7 +152,7 @@ p22.to(".page2 .overlay .p2h1", {
       scrub: true,
       start: '440% -400%',
       end: '640% -1000%',
-      markers: true,
+
 
 
 
@@ -190,8 +192,8 @@ firstt1.to(".page2 .overlay .first", {
 
   }
 })
- .to(".page2 .overlay .first", {
-  transform: "translateY(-174%)",
+  .to(".page2 .overlay .first", {
+    transform: "translateY(-200%)",
     scrollTrigger: {
       trigger: ".page2 .overlay .p2h1",
       scroller: "#main",
@@ -211,27 +213,92 @@ firstt1.to(".page2 .overlay .first", {
       scroller: "#main",
       scrub: true,
       start: "10300% top",
-      end: "10300% -300%",
+      end: "10300% -300%"
+
     }
   })
   .to(".page2 .overlay .first", {
-    top: '48%',
-      scrollTrigger: {
+    top: '49%',
+    scrollTrigger: {
       trigger: ".page2 .overlay .first",
       scroller: "#main",
       scrub: true,
       start: "19200% top",
-      end: "19200% -400%",
+      end: "19200% -350%",
     }
   })
   .to(".page2 .overlay .first", {
-    top:'80%',
-      scrollTrigger: {
+    top: '80%',
+    scrollTrigger: {
       trigger: ".page2 .overlay .first",
       scroller: "#main",
       scrub: true,
-      start: "36000% top",
-      end: "36000% -1000%",
+      start: "38200% top",
+      end: "38200% -2900%",
+
+    }
+  }).to(".page2 .overlay .first", {
+    scale: '2',
+    fontWeight: '700',
+    transform: "translateX(54%)",
+    scrollTrigger: {
+      trigger: ".page2 .overlay .first",
+      scroller: "#main",
+      scrub: true,
+      start: "55200% top",
+      end: "55200% -1000%",
+    }
+  })
+
+  .to(".page2 .overlay .first", {
+    display: 'none',
+    scrollTrigger: {
+      trigger: ".page2 .overlay .first",
+      scroller: "#main",
+      scrub: true,
+
+      start: "56200% top",
+      end: "56200% -1000%",
+    }
+  })
+
+
+
+var p2s = gsap.timeline();
+
+p2s.to(".page2 .overlay .second", {
+  opacity: 1,
+  scrollTrigger: {
+    trigger: ".page2 .overlay .second",
+    scroller: "#main",
+    scrub: true,
+    start: "61600% top",
+    end: "56200% -1000%",
+  }
+})
+  .to(".page2 .overlay .second", {
+    transform: "translateY(-200%)",
+    scrollTrigger: {
+      trigger: ".page2 .overlay .second",
+      scroller: "#main",
+      scrub: true,
+      start: "63600% top",
+      end: "63600% -500%",
+
+
+
+    }
+  }).to(".page2 .overlay .second", {
+    fontWeight: 300,
+    left: '10%',
+    fontSize: '3.5vw',
+    letterSpacing: '4px',
+    scrollTrigger: {
+      trigger: ".page2 .overlay .second",
+      scroller: "#main",
+      scrub: true,
+      start: "66500% top",
+      end: "66500% -500%",
     }
   })
 
@@ -698,7 +765,7 @@ gsap.to(".overlay", {
     scroller: "#main",
     scrub: true,
     start: "1vh 1vh",
-    end: "3000vh -70000vh",
+    end: "3000vh -800000vh",
     pin: true,
   },
 });
@@ -744,32 +811,41 @@ var th1 = gsap.timeline();
 
 th1.to(".th h5", {
   top: '22%',
-  // transform: "translateY(-10%)",
   scale: 0.5,
-  // duration: 10,
   ease: "sine.out",
   scrollTrigger: {
     trigger: ".th h5",
     scroller: "#main",
-    scrub: 1,
+    scrub: true,
     start: '12800% top',
     end: '12000% -500%',
     preventOverlaps: true
   },
   onComplete: function () {
-    console.log('hello');
     gsap.to(".th h5", {
       top: '19%',
       scrollTrigger: {
         trigger: ".th h5",
         scroller: "#main",
-        scrub: 1,
+        scrub: true,
         start: '100% top',
         end: '100% -400%'
       }
     });
   }
 })
+gsap.to(".th h5", {
+  transform: "translate(73%,-50%)",
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".th h5",
+    scroller: "#main",
+    scrub: true,
+    start: "31300% top",
+    end: "31300% -400%",
+  }
+})
+
 
 
 
@@ -894,20 +970,7 @@ etu.to(".etu h5 .etuone", {
 
     }
   })
-// .to(".etu h5", {
-//  y:-147,
-// fontWeight: '500',
-// scale:0.3,
 
-//   scrollTrigger: {
-//     trigger: ".etu h5",
-//     scroller: "#main",
-//     scrub: 1,
-//    start:'16500% top',
-//    end:'16500% -500%',
-
-
-//   }
 // })
 
 
@@ -920,9 +983,9 @@ etu1.to(".etu h5", {
   scrollTrigger: {
     trigger: ".etu h5",
     scroller: "#main",
-    scrub: 1,
+    scrub: true,
     start: '16500% top',
-    end: '16200% -200%',
+    end: '16000% -200%',
     preventOverlaps: true,
   },
   onComplete: function () {
@@ -932,13 +995,26 @@ etu1.to(".etu h5", {
       scrollTrigger: {
         trigger: ".etu h5",
         scroller: "#main",
-        scrub: 1,
+        scrub: true,
         start: '100% top',
         end: '100% -500%'
       }
 
 
     });
+  }
+})
+
+
+gsap.to(".etu h5", {
+  transform: "translate(52%,-100%)",
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".etu h5",
+    scroller: "#main",
+    scrub: true,
+    start: "31300% top",
+    end: "31300% -1000%",
   }
 })
 
@@ -1047,9 +1123,9 @@ bsp.to(".bsp h5 .bspone", {
     scrollTrigger: {
       trigger: ".bsp h5",
       scroller: "#main",
-      scrub: 1,
+      scrub: true,
       start: '19500% top',
-      end: '19500% -500%',
+      end: '19200% -500%',
       preventOverlaps: true,
 
     },
@@ -1060,13 +1136,26 @@ bsp.to(".bsp h5 .bspone", {
         scrollTrigger: {
           trigger: ".bsp h5",
           scroller: "#main",
-          scrub: 1,
+          scrub: true,
           start: '100% top',
           end: '100% -500%',
         }
       })
     }
   })
+
+
+gsap.to(".bsp h5", {
+  transform: "translate(84%,-150%)",
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".bsp h5",
+    scroller: "#main",
+    scrub: true,
+    start: "31300% top",
+    end: "31300% -1550%",
+  }
+})
 
 // ----------------------------------------------------bsp animation end-----------------------------------------------------------------------------
 
@@ -1290,8 +1379,8 @@ elf.to(".elf h5 .elf1", {
 
 
     }
-   
-  }).to(".elf h5", { 
+
+  }).to(".elf h5", {
     top: '48%',
     scale: 0.6,
     duration: 10,
@@ -1299,10 +1388,10 @@ elf.to(".elf h5 .elf1", {
     scrollTrigger: {
       trigger: ".elf h5",
       scroller: "#main",
-      scrub: 1,
+      scrub: true,
       start: '29000% top',
       end: '28200% -400%',
-      preventOverlaps:true
+      preventOverlaps: true
     },
     onComplete: function () {
       gsap.to('.elf h5', {
@@ -1310,7 +1399,7 @@ elf.to(".elf h5 .elf1", {
         scrollTrigger: {
           trigger: ".elf h5",
           scroller: "#main",
-          scrub: 1,
+          scrub: true,
           start: '100% top',
           end: '100% -100%',
         }
@@ -1318,6 +1407,20 @@ elf.to(".elf h5 .elf1", {
     }
 
   })
+
+
+
+gsap.to(".elf h5", {
+  transform: "translate(34%,-220%)",
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".elf h5",
+    scroller: "#main",
+    scrub: true,
+    start: "36300% top",
+    end: "36300% -2000%",
+  }
+})
 // -----------------------------------------------------bns animation start-------------------------------------------------------------------------
 
 var bns = gsap.timeline();
@@ -1331,7 +1434,9 @@ bns.to(".bns h5 .bns1", {
     scrub: 1,
     start: '29500% top',
     end: '29500% -400%',
-    markers:true,
+
+
+
     // start: '500% -4300%',
     // end: '500% -4800%',
   }
@@ -1345,7 +1450,7 @@ bns.to(".bns h5 .bns1", {
       scroller: "#main",
       scrub: 1,
       start: '29600% top',
-    end: '29500% -400%',
+      end: '29500% -400%',
     }
   })
   .to(".bns h5 .bns3", {
@@ -1422,10 +1527,10 @@ bns.to(".bns h5 .bns1", {
     scrollTrigger: {
       trigger: ".bns h5",
       scroller: "#main",
-      scrub: 1, 
-       start: '30300% top',
+      scrub: 1,
+      start: '30300% top',
       end: '29500% -400%',
-   
+
     }
     , onComplete: () => {
       console.log('animation end')
@@ -1438,12 +1543,25 @@ bns.to(".bns h5 .bns1", {
       trigger: ".bns h5",
       scroller: "#main",
       scrub: 1,
-      start: '31000% top',
-      end: '32000% -400%',
-      markers: true,
+      start: '32500% top',
+      end: '32500% -400%',
+
     }
   })
 
+
+
+gsap.to(".bns h5", {
+  transform: "translate(106%,-310%)",
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".bns h5",
+    scroller: "#main",
+    scrub: true,
+    start: "36300% top",
+    end: "36300% -3100%",
+  }
+})
 // ------------------------------------bns animation end------------------------------------------------------------------------------------------------------------
 
 
@@ -1461,103 +1579,399 @@ sw.to(".sw h5 .sw1", {
     end: '29500% -400%',
   }
 })
-.to(".sw h5 .sw2", {
-  transform: "translateX(0vw)",
-  duration: 10,
-  opacity: 1,
+  .to(".sw h5 .sw2", {
+    transform: "translateX(0vw)",
+    duration: 10,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".sw h5",
+      scroller: "#main",
+      scrub: 1,
+      start: '29800% top',
+      end: '29500% -400%',
+    }
+  })
+  .to(".sw h5 .sw3", {
+    transform: "translateX(0vw)",
+    duration: 10,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".sw h5",
+      scroller: "#main",
+      scrub: 1,
+      start: '29900% top',
+      end: '29500% -400%',
+    }
+  }).to(".sw h5 .sw4", {
+    transform: "translateX(0vw)",
+    duration: 10,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".sw h5",
+      scroller: "#main",
+      scrub: 1,
+      start: '30000% top',
+      end: '29500% -400%',
+    }
+  }).to(".sw h5 .sw5", {
+    transform: "translateX(0vw)",
+    duration: 10,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".sw h5",
+      scroller: "#main",
+      scrub: 1,
+      start: '30100% top',
+      end: '29500% -400%',
+    }
+  }).to(".sw h5 .sw6", {
+    transform: "translateX(0vw)",
+    duration: 10,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".sw h5",
+      scroller: "#main",
+      scrub: 1,
+      start: '30200% top',
+      end: '29500% -400%',
+    }
+  }).to(".sw h5 .sw7", {
+    transform: "translateX(0vw)",
+    duration: 10,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".sw h5",
+      scroller: "#main",
+      scrub: 1,
+      start: '30300% top',
+      end: '29500% -400%',
+    }
+  }).to(".sw h5 .sw8", {
+    transform: "translateX(0vw)",
+    duration: 10,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".sw h5",
+      scroller: "#main",
+      scrub: 1,
+      start: '30400% top',
+      end: '29500% -400%',
+    }
+  }).to(".sw h5 .sw9", {
+    transform: "translateX(0vw)",
+    duration: 10,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: ".sw h5",
+      scroller: "#main",
+      scrub: 1,
+      start: '30500% top',
+      end: '29500% -400%',
+    }
+  }).to(".sw h5", {
+    top: '64%',
+    scale: '0.8',
+    scrollTrigger: {
+      trigger: ".sw h5",
+      scroller: "#main",
+      scrub: 1,
+      start: '32800% top',
+      end: '32800% -400%',
+
+    }
+  })
+
+
+
+
+gsap.to(".sw h5", {
+  transform: "translate(81%,-400%)",
+  opacity: 0,
   scrollTrigger: {
     trigger: ".sw h5",
     scroller: "#main",
-    scrub: 1,
-    start: '29800% top',
-    end: '29500% -400%',
+    scrub: true,
+    start: "36300% top",
+    end: "36300% -4000%",
   }
 })
-.to(".sw h5 .sw3", {
+
+
+
+// -----------------------------------------------cm animation start------------------------------------------------------------------------------------
+var cm = gsap.timeline();
+
+cm.to(".page2 .overlay .cm1", {
   transform: "translateX(0vw)",
-  duration: 10,
-  opacity: 1,
+   opacity: 1,
   scrollTrigger: {
-    trigger: ".sw h5",
+    trigger: ".page2 .overlay .cm",
     scroller: "#main",
-    scrub: 1,
-    start: '29900% top',
-    end: '29500% -400%',
-  }
-}).to(".sw h5 .sw4", {
-  transform: "translateX(0vw)",
-  duration: 10,
-  opacity: 1,
-  scrollTrigger: {
-    trigger: ".sw h5",
-    scroller: "#main",
-    scrub: 1,
-    start: '30000% top',
-    end: '29500% -400%',
-  }
-}).to(".sw h5 .sw5", {
-  transform: "translateX(0vw)",
-  duration: 10,
-  opacity: 1,
-  scrollTrigger: {
-    trigger: ".sw h5",
-    scroller: "#main",
-    scrub: 1,
-    start: '30100% top',
-    end: '29500% -400%',
-  }
-}).to(".sw h5 .sw6", {
-  transform: "translateX(0vw)",
-  duration: 10,
-  opacity: 1,
-  scrollTrigger: {
-    trigger: ".sw h5",
-    scroller: "#main",
-    scrub: 1,
-    start: '30200% top',
-    end: '29500% -400%',
-  }
-}).to(".sw h5 .sw7", {
-  transform: "translateX(0vw)",
-  duration: 10,
-  opacity: 1,
-  scrollTrigger: {
-    trigger: ".sw h5",
-    scroller: "#main",
-    scrub: 1,
-    start: '30300% top',
-    end: '29500% -400%',
-  }
-}).to(".sw h5 .sw8", {
-  transform: "translateX(0vw)",
-  duration: 10,
-  opacity: 1,
-  scrollTrigger: {
-    trigger: ".sw h5",
-    scroller: "#main",
-    scrub: 1,
-    start: '30400% top',
-    end: '29500% -400%',
-  }
-}).to(".sw h5 .sw9", {
-  transform: "translateX(0vw)",
-  duration: 10,
-  opacity: 1,
-  scrollTrigger: {
-    trigger: ".sw h5",
-    scroller: "#main",
-    scrub: 1,
-    start: '30500% top',
-    end: '29500% -400%',
-  }
-}).to(".sw h5", {
-  top: '64%',
-  scale: '0.8',
-  scrollTrigger: {
-    trigger: ".sw h5",
-    scroller: "#main",
-    scrub: 1,
-    start: '500% -5240%',
-    end: '500% -5640%',
-  }
+    scrub: true,
+    start:"11300% top",
+    end:"11300% -800%",
+
+
+  },
 })
+.to(".page2 .overlay .cm2", {
+  transform: "translateX(0vw)",
+   opacity: 1,
+  scrollTrigger: {
+    trigger: ".page2 .overlay .cm",
+    scroller: "#main",
+    scrub: true,
+    start:"11500% top",
+    end: "11500% -800%",
+    markers:true,
+
+  },
+}).to(".page2 .overlay .cm3", {
+  transform: "translateX(0vw)",
+   opacity: 1,
+  scrollTrigger: {
+    trigger: ".page2 .overlay .cm",
+    scroller: "#main",
+    scrub:true,
+    start:"11700% top",
+    end:"11700% -800%",
+    markers:true,
+
+  },
+})
+.to(".page2 .overlay .cm4", {
+  transform: "translateX(0vw)",
+   opacity: 1,
+  scrollTrigger: {
+    trigger: ".page2 .overlay .cm",
+    scroller: "#main",
+    scrub:true,
+    start:"11900% top",
+    end:"11900% -800%",
+    markers:true,
+
+  },
+}).to(".page2 .overlay .cm5", {
+  transform: "translateX(0vw)",
+   opacity: 1,
+  scrollTrigger: {
+    trigger: ".page2 .overlay .cm",
+    scroller: "#main",
+    scrub: true,
+    start:"12100% top",
+    end:"12100% -800%",
+    markers:true,
+
+  },
+})
+
+.to(".page2 .overlay .cm6", {
+  transform: "translateX(0vw)",
+   opacity: 1,
+  scrollTrigger: {
+    trigger: ".page2 .overlay .cm",
+    scroller: "#main",
+    scrub: true,
+    start:"12300% top",
+    end:"12300% -800%",
+    markers:true,
+
+  },
+}).to(".page2 .overlay .cm7", {
+  transform: "translateX(0vw)",
+   opacity: 1,
+  scrollTrigger: {
+    trigger: ".page2 .overlay .cm",
+    scroller: "#main",
+    scrub: true,
+    start:"12500% top",
+    end:"12500% -800%",
+    markers:true,
+
+  },
+}).to(".page2 .overlay .cm8", {
+  transform: "translateX(0vw)",
+   opacity: 1,
+  scrollTrigger: {
+    trigger: ".page2 .overlay .cm",
+    scroller: "#main",
+    scrub: true,
+    start:"12700% top",
+    end:"12700% -800%",
+    markers:true,
+
+  },
+}).to(".page2 .overlay .cm9", {
+  transform: "translateX(0vw)",
+   opacity: 1,
+  scrollTrigger: {
+    trigger: ".page2 .overlay .cm",
+    scroller: "#main",
+    scrub: true,
+    start:"12900% top",
+    end:"12900% -800%",
+    markers:true,
+
+  },
+}).to(".page2 .overlay .cm10", {
+  transform: "translateX(0vw)",
+   opacity: 1,
+  scrollTrigger: {
+    trigger: ".page2 .overlay .cm",
+    scroller: "#main",
+    scrub: true,
+    start:"13100% top",
+    end:"13100% -800%",
+    markers:true,
+
+  },
+}).to(".page2 .overlay .cm11", {
+  transform: "translateX(0vw)",
+   opacity: 1,
+  scrollTrigger: {
+    trigger: ".page2 .overlay .cm",
+    scroller: "#main",
+    scrub: true,
+    start:"13300% top",
+    end:"13300% -800%",
+    markers:true,
+
+  },
+})
+.to(".page2 .overlay .cm12", {
+  transform: "translateX(0vw)",
+   opacity: 1,
+  scrollTrigger: {
+    trigger: ".page2 .overlay .cm",
+    scroller: "#main",
+    scrub: true,
+    start:"13600% top",
+    end:"13600% -800%",
+    markers:true,
+  },
+}).to(".page2 .overlay .cm13", {
+  transform: "translateX(0vw)",
+   opacity: 1,
+  scrollTrigger: {
+    trigger: ".page2 .overlay .cm",
+    scroller: "#main",
+    scrub: true,
+    start:"13900% top",
+    end:"13900% -800%",
+    markers:true,
+  },
+})
+.to(".page2 .overlay .cm h5", {
+ top:'19%',
+ scale:'0.5',
+  scrollTrigger: {
+    trigger: ".page2 .overlay .cm h5",
+    scroller: "#main",
+    scrub: true,
+    start: "88000% top",
+    end: "88000% -800%",
+    markers:true,
+
+  },
+})
+.to(".page2 .overlay .cm h5", {
+  transform:"translate(40%,-60%)",
+  opacity:0,
+   scrollTrigger: {
+     trigger: ".page2 .overlay .cm h5",
+     scroller: "#main",
+     scrub: true,
+     start:"93000% top",
+     end: "93000% -800%",
+     markers:true,
+
+   },
+ })
+
+
+
+// ------------------------------------cmp animation----------------------------------
+var cmp=gsap.timeline()
+cmp.to(".page2 .overlay .cm .cmp", {
+top:'38%',
+opacity:1,
+   scrollTrigger: {
+     trigger: ".page2 .overlay .cm .cmp",
+     scroller: "#main",
+     scrub: true,
+     start: "29500% top",
+     end: "29500% -800%",
+     markers:true,
+
+   },
+ })
+ .to(".page2 .overlay .cm .cmp p", {
+opacity:0,
+     scrollTrigger: {
+       trigger: ".page2 .overlay .cm .cmp",
+       scroller: "#main",
+       scrub: 3,
+       start: "29800% top",
+       end: "29800% -1000%",
+       markers:true,
+
+     },
+   })
+
+
+// //  -------------------------------.inp animation start------------------------
+
+var inp = gsap.timeline();
+
+inp.to(".page2 .overlay .in .inh", {
+  opacity: 1,
+  top:'9%',
+  scrollTrigger: {
+    trigger: ".page2 .overlay .in .inh",
+    scroller: "#main",
+    scrub: true,
+    start: "32600% top",
+    end: "32600% -300%",
+
+
+  },
+})
+  .to(".page2 .overlay .in .inp", {
+    left: '20%',
+    opacity: '1',
+    scrollTrigger: {
+      trigger: ".page2 .overlay .in .inp",
+      scroller: "#main",
+      scrub: 3,
+      start: "33600% top",
+      end: "33600% -500%",
+      markers: true,
+
+    },
+  })
+  .to(".page2 .overlay .in h5", {
+    transform: "translate(1%,-160%)",
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".page2 .overlay .in h5",
+      scroller: "#main",
+      scrub: true,
+      start: "210000% top",
+      end: "210000% -350%",
+      markers: true,
+
+    },
+  })
+  .to(".page2 .overlay .in .inp  p", {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".page2 .overlay .in .inp",
+      scroller: "#main",
+      scrub: true,
+      start: "34600% top",
+      end: "34600% -500%",
+      markers: true,
+
+    },
+  })
+
