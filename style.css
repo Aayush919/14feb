@@ -218,6 +218,22 @@ font-style: normal;
   
 }
 
+.overlay .five{
+  position: absolute;
+  top: 47%;
+  left: 24%;
+  font-size: 7vw;
+  color: #330152;
+  /* line-height: 7vw; */
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  display: none;
+ 
+}
+
 
 .yrs {
   position: absolute;
@@ -984,12 +1000,14 @@ font-style: normal;
   position: absolute;
   display: block;
   overflow: hidden;
+
 }
 
 .cm h5 {
-  /* opacity: 0; */
+  opacity: 0;
   /* in 55 */
-  top: 26%;
+  top: 55%;
+
   position: absolute;
   transform: translateX(57%);
   font-size: 7vw;
@@ -1087,9 +1105,9 @@ font-style: normal;
   text-align: center;
   letter-spacing: 1px;
   line-height: 47px;
-  width: 57%;
+  width: 70%;
   position: absolute;
-  top: 45%;
+  top: 65%;
   left: 20%;
   font-size: 1vw;
   opacity: 0;
