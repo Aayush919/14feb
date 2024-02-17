@@ -128,7 +128,7 @@ p22.to(".page2 .overlay .p2h1", {
     scroller: "#main",
     scrub: true,
     start: "1% 34%",
-    end: "top -179%",
+    end: "top -190%",
     markers:true,
   
 
@@ -144,16 +144,11 @@ p22.to(".page2 .overlay .p2h1", {
       scrub: true,
       start: "320% top",
       end: "200% -80%",
- 
-  
-
-
-
     }
 
   })
   .to(".page2 .overlay .p2h1", {
-    transform: 'translateY(75%)',
+    transform: 'translateY(19vh)',
     scrollTrigger: {
       trigger: ".bottom-text h2",
       scroller: "#main",
