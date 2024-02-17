@@ -31,7 +31,7 @@ function init() {
 init();
 
 
-gsap.set(".page2 .overlay .first", { display: 'none' })
+// gsap.set(".page2 .overlay .first", { display: 'none' })
 
 gsap.set(".page2 .overlay .second", { display:'none' })
 gsap.set(".page2 .overlay .third ", {display:'none'})
@@ -149,10 +149,7 @@ p22.to(".page2 .overlay .p2h1", {
 
   })
   .to(".page2 .overlay .p2h1", {
-    // transform: 'translateY(75%)',
-    y:106,
-    // top:'39%',
-
+    transform: 'translateY(8.3vw)',
     scrollTrigger: {
       trigger: ".bottom-text h2",
       scroller: "#main",
@@ -216,7 +213,7 @@ firstt1.to(".page2 .overlay .first", {
   }
 })
   .to(".page2 .overlay .first", {
-    transform: "translateY(-100%)",
+    // transform: "translateY(-50%)",
     scrollTrigger: {
       trigger: ".bottom-text h2",
       scroller: "#main",
