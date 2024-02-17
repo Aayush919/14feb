@@ -148,6 +148,7 @@ font-style: normal;
   font-weight: 600;
   font-style: normal;
   text-shadow: "0px 3px 12px #00000080";
+  display: initial;
 
 }
 
@@ -156,7 +157,6 @@ font-style: normal;
   top: 28%;
   left: 24%;
   color: #330152;
-  /* line-height: 7vw; */
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: "montserrat", sans-serif;
@@ -164,7 +164,7 @@ font-style: normal;
   font-weight: 320;
   left: 10%;
   font-size:3.5vw;
-color: red;
+
 
   
 
@@ -172,18 +172,20 @@ color: red;
 
 .overlay .second {
   position: absolute;
-  top: 42%;
+  top: 45%;
   left: 24%;
   font-size: 7vw;
   color: #330152;
-  line-height: 7vw;
-  letter-spacing: 8px;
+  /* line-height: 7vw; */
+  letter-spacing: 4px;
   text-transform: uppercase;
   font-family: "montserrat", sans-serif;
   font-weight: 700;
   font-style: normal;
 
+
 }
+
 
 .overlay .third {
   position: absolute;
@@ -191,9 +193,7 @@ color: red;
   left: 10%;
   font-size: 3.5vw;
   color: #330152;
-  
   line-height: 7vw;
-  
   text-transform: uppercase;
   font-family: "montserrat", sans-serif;
   font-weight: 380;
@@ -201,6 +201,21 @@ color: red;
   letter-spacing: 4px;
 }
 
+
+.overlay .four{
+  position: absolute;
+  top: 28%;
+  left: 24%;
+  color: #330152;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 320;
+  left: 10%;
+  font-size:3.5vw;
+  display: none;
+}
 
 
 .yrs {
@@ -811,7 +826,7 @@ color: red;
 }
 
 .bns h5 {
-  top: 70%;
+  top: 72%;
   position: absolute;
   transform: translateX(105.5%);
   font-size: 6vw;
@@ -890,7 +905,7 @@ color: red;
 }
 
 .sw h5 {
-  top: 85%;
+  top: 84%;
   position: absolute;
   transform: translateX(81%);
   font-size: 6vw;
