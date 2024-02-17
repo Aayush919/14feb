@@ -149,7 +149,7 @@ p22.to(".page2 .overlay .p2h1", {
 
   })
   .to(".page2 .overlay .p2h1", {
-    transform: 'translateY(8.3vw)',
+    transform: 'translateY(6.7rem)',
     scrollTrigger: {
       trigger: ".bottom-text h2",
       scroller: "#main",
