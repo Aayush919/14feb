@@ -31,7 +31,7 @@ function init() {
 init();
 
 
-gsap.set(".page2 .overlay .first", { display: 'none' })
+// gsap.set(".page2 .overlay .first", { display: 'none' })
 
 gsap.set(".page2 .overlay .second", { display:'none' })
 gsap.set(".page2 .overlay .third ", {display:'none'})
@@ -111,12 +111,8 @@ gsap.to(".hero h1", {
     scroller: "#main",
     scrub: true,
     start: "1% 34%",
-    end: "top -206%",
-
- 
-
-
-  },
+    end: "top -207%",
+    },
 })
 
 
@@ -142,7 +138,6 @@ p22.to(".page2 .overlay .p2h1", {
     fontWeight: 300,
     left: '10%',
     fontSize: '3.5vw',
-
     scrollTrigger: {
       trigger: ".hero h2",
       scroller: "#main",
@@ -158,7 +153,7 @@ p22.to(".page2 .overlay .p2h1", {
 
   })
   .to(".page2 .overlay .p2h1", {
-    transform: 'translateY(6.2vw)',
+    transform: 'translateY(75%)',
     scrollTrigger: {
       trigger: ".bottom-text h2",
       scroller: "#main",

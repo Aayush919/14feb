@@ -140,7 +140,7 @@ font-style: normal;
   top: -166%;
   left: 19.2%;
   text-align: center;
-  line-height: 7vw;
+  /* line-height: 7vw; */
   letter-spacing: 2px;
   font-size: 9vw;
   text-transform: uppercase;
@@ -157,7 +157,8 @@ font-style: normal;
   left: 25.5%;
   font-size: 7vw;
   color: #330152;
-  line-height: 7vw;
+  color: red;
+  /* line-height: 7vw; */
   letter-spacing: 4px;
   text-transform: uppercase;
   font-family: "montserrat", sans-serif;
