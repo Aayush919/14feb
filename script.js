@@ -31,7 +31,7 @@ function init() {
 init();
 
 
-// gsap.set(".page2 .overlay .first", { display: 'none' })
+gsap.set(".page2 .overlay .first", { display: 'none' })
 
 gsap.set(".page2 .overlay .second", { display:'none' })
 gsap.set(".page2 .overlay .third ", {display:'none'})
@@ -72,6 +72,7 @@ gsap.to(".nav", {
     scrub: 1,
     trigger: ".nav",
     scroller: "#main",
+
     start: "200vh 190vh",
     end: "900vh 100vh",
   },
@@ -148,7 +149,10 @@ p22.to(".page2 .overlay .p2h1", {
 
   })
   .to(".page2 .overlay .p2h1", {
-    transform: 'translateY(19vh)',
+    // transform: 'translateY(75%)',
+    y:106,
+    // top:'39%',
+
     scrollTrigger: {
       trigger: ".bottom-text h2",
       scroller: "#main",
@@ -201,7 +205,7 @@ p22.to(".page2 .overlay .p2h1", {
 const firstt1 = gsap.timeline();
 
 firstt1.to(".page2 .overlay .first", {
-  opacity: 1,
+ display:'initial',
   scrollTrigger: {
     trigger: ".bottom-text h2",
     scroller: "#main",
