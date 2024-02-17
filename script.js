@@ -31,7 +31,7 @@ function init() {
 init();
 
 
-// gsap.set(".page2 .overlay .first", { display: 'none' })
+gsap.set(".page2 .overlay .first", { display: 'none' })
 
 gsap.set(".page2 .overlay .second", { display:'none' })
 gsap.set(".page2 .overlay .third ", {display:'none'})
@@ -112,7 +112,7 @@ gsap.to(".hero h1", {
     scroller: "#main",
     scrub: true,
     start: "1% 34%",
-    end: "top -207%",
+    end: "top -207%"
     },
 })
 
@@ -130,7 +130,7 @@ p22.to(".page2 .overlay .p2h1", {
     scrub: true,
     start: "1% 34%",
     end: "top -190%",
-    markers:true,
+    
   
 
   },
@@ -148,53 +148,55 @@ p22.to(".page2 .overlay .p2h1", {
     }
 
   })
-  .to(".page2 .overlay .p2h1", {
-    transform: 'translateY(6.7rem)',
-    scrollTrigger: {
-      trigger: ".bottom-text h2",
-      scroller: "#main",
-      scrub: 1,
-      start: '280% top',
-      end: 'top -60%',
-    }
-
-  })
-
-
-  .to(".page2 .overlay .p2h1", {
-    scale: '2',
-    transform: "translateX(45%)",
-    fontFamily: "'montserrat', 'sans-serif'",
-    fontWeight: '700',
-    fontStyle: 'normal',
-
-    scrollTrigger: {
-
-      trigger: ".bottom-text h2",
-      scroller: "#main",
-      scrub: 1,
-      start: '620% top',
-      end: 'top -120%',
-
-
-
-    }
-
-
-  })
-
+  
   .to(".page2 .overlay .p2h1", {
     opacity: 0,
     scrollTrigger: {
       trigger: ".bottom-text h2",
       scroller: "#main",
       scrub: 1,
-      start: '1100% top',
-      end: 'top -120%'
+      start: '80% top',
+      end: 'top -120%',
+      
 
     }
 
   })
+  // .to(".page2 .overlay .p2h1", {
+  //   transform: 'translateY(75%)',
+  //   scrollTrigger: {
+  //     trigger: ".bottom-text h2",
+  //     scroller: "#main",
+  //     scrub: 1,
+  //     start: '280% top',
+  //     end: 'top -60%',
+  //   }
+
+  // })
+
+
+  // .to(".page2 .overlay .p2h1", {
+  //   scale: '2',
+  //   transform: "translateX(45%)",
+  //   fontFamily: "'montserrat', 'sans-serif'",
+  //   fontWeight: '700',
+  //   fontStyle: 'normal',
+
+  //   scrollTrigger: {
+
+  //     trigger: ".bottom-text h2",
+  //     scroller: "#main",
+  //     scrub: 1,
+  //     start: '620% top',
+  //     end: 'top -120%',
+
+
+
+  //   }
+
+
+  // })
+
 
 // ----------------------------------------p2h1 end------------------------------------------
 // -------------------------------------------------------------------------------------------first start-------------------------------------------------------------------------
@@ -205,74 +207,73 @@ firstt1.to(".page2 .overlay .first", {
  display:'initial',
   scrollTrigger: {
     trigger: ".bottom-text h2",
-    scroller: "#main",
-    scrub: 1,
-    start: '1100% top',
-    end: 'top -200%'
-
-  }
-})
-  .to(".page2 .overlay .first", {
-    // transform: "translateY(-50%)",
-    scrollTrigger: {
-      trigger: ".bottom-text h2",
       scroller: "#main",
       scrub: 1,
-      start: '1500% top',
-      end: 'top -200%'
-
-
-    }
-  })
-  .to(".page2 .overlay .first", {
-    fontWeight: 300,
-    left: '10%',
-    fontSize: '3.5vw',
-    scrollTrigger: {
-      trigger: ".bottom-text h2",
-      scroller: "#main",
-      scrub: 1,
-      start: '1800% top',
-      end: 'top -200%'
-
-
-    }
-  })
-.to(".page2 .overlay .first", {
-  top: '70%',
-  // color:'red',
-  scrollTrigger: {
-    trigger: ".th h5",
-    scroller: "#main",
-    scrub: true,
-    start: "4200% top",
-    end: "4200% -100%",
+      start: '80% top',
+      markers:true,
+      end: 'top -120%',
 
   }
 })
-.to(".page2 .overlay .first", {
-  scale: '2',
-  fontWeight: '700',
-  transform: "translateX(54%)",
-  scrollTrigger: {
-    trigger: ".th h5",
-    scroller: "#main",
-    scrub: true,
-    start: "4800% top",
-    end: "4800% -100%",
-  }
-})
-.to(".page2 .overlay .first", {
-  display: 'none',
-  scrollTrigger: {
-    trigger: ".th h5",
-    scroller: "#main",
-    scrub: true,
-    start: "5000% top",
-    end: "5000% -10%",
+//   .to(".page2 .overlay .first", {
+//     transform: "translateY(-100%)",
+//     scrollTrigger: {
+//       trigger: ".bottom-text h2",
+//       scroller: "#main",
+//       scrub: 1,
+//       start: '1500% top',
+//       end: 'top -200%'
+//     }
+//   })
+//   .to(".page2 .overlay .first", {
+//     fontWeight: 300,
+//     left: '10%',
+//     fontSize: '3.5vw',
+//     scrollTrigger: {
+//       trigger: ".bottom-text h2",
+//       scroller: "#main",
+//       scrub: 1,
+//       start: '1800% top',
+//       end: 'top -200%'
 
-  }
-})
+
+//     }
+//   })
+// .to(".page2 .overlay .first", {
+//   top: '70%',
+
+//   scrollTrigger: {
+//     trigger: ".th h5",
+//     scroller: "#main",
+//     scrub: true,
+//     start: "4200% top",
+//     end: "4200% -100%",
+
+//   }
+// })
+// .to(".page2 .overlay .first", {
+//   scale: '2',
+//   fontWeight: '700',
+//   transform: "translateX(54%)",
+//   scrollTrigger: {
+//     trigger: ".th h5",
+//     scroller: "#main",
+//     scrub: true,
+//     start: "4800% top",
+//     end: "4800% -100%",
+//   }
+// })
+// .to(".page2 .overlay .first", {
+//   display: 'none',
+//   scrollTrigger: {
+//     trigger: ".th h5",
+//     scroller: "#main",
+//     scrub: true,
+//     start: "5000% top",
+//     end: "5000% -10%",
+
+//   }
+// })
 
 
 
@@ -304,7 +305,7 @@ p2s.to(".page2 .overlay .second", {
     fontWeight: 300,
     left: '10%',
     fontSize: '3.5vw',
-    letterSpacing: '4px',
+    letterSpacing: '3px',
     scrollTrigger: {
       trigger: ".page2 .overlay .second",
       scroller: "#main",
