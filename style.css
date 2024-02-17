@@ -215,6 +215,7 @@ font-style: normal;
   left: 10%;
   font-size:3.5vw;
   display: none;
+  
 }
 
 
@@ -559,7 +560,8 @@ font-style: normal;
 .etu h5 {
   top: 45%;
   position: absolute;
-  transform: translateX(33%);
+  /* transform: translateX(33%); */
+  left: 23%;
   font-size: 9vw;
   text-transform: uppercase;
   color: #330152;
@@ -650,7 +652,8 @@ font-style: normal;
 .bsp h5 {
   top: 50%;
   position: absolute;
-  transform: translateX(53%);
+  /* transform: translateX(53%); */
+  left: 20%;
   font-size: 9vw;
   text-transform: uppercase;
   color: #330152;
@@ -716,7 +719,8 @@ font-style: normal;
 .elf h5 {
   top: 65%;
   position: absolute;
-  transform: translateX(29%);
+  /* transform: translateX(29%); */
+  left: 20%;
   font-size: 6vw;
   text-transform: uppercase;
   color: #330152;
@@ -828,7 +832,8 @@ font-style: normal;
 .bns h5 {
   top: 72%;
   position: absolute;
-  transform: translateX(105.5%);
+  /* transform: translateX(105.5%); */
+  left: 35%;
   font-size: 6vw;
   text-transform: uppercase;
   color: #330152;
@@ -907,7 +912,8 @@ font-style: normal;
 .sw h5 {
   top: 84%;
   position: absolute;
-  transform: translateX(81%);
+ left: 36%;
+  /* transform: translateX(81%); */
   font-size: 6vw;
   text-transform: uppercase;
   color: #330152;

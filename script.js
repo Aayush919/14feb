@@ -310,6 +310,18 @@ opacity:1,
     }
   }
   )
+  .to(".page2 .overlay .second", {
+display:'none',
+    scrollTrigger: {
+      trigger: ".page2 .overlay .second",
+      scroller: "#main",
+      scrub: true,
+      start: "3000% top",
+     end: "3000% -80%",
+      
+    }
+  }
+  )
 
 // .to(".page2 .overlay .second", {
 //  opacity:0,
@@ -335,11 +347,10 @@ opacity:1,
 //     }
 //   })
 
-// -------------------------------------------------------------------------------------------------first end---------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------first end---------------------------------------------------------------------------------------------------------------
 // ----------------------------------------------------------animation on third h1 start-------------------------------------------------------------------------------------------------------------------
 
 var third = gsap.timeline();
-
 
 third.to(".page2 .overlay .third", {
   top: '45%',
@@ -377,7 +388,54 @@ third.to(".page2 .overlay .third", {
     end: "17300% -100%",
 
   }
+
 })
+
+// --------------------------------------------------gsap four animation--------------
+var fr=gsap.timeline();
+fr.to(".page2 .overlay .four", {
+  display:'initial',
+      scrollTrigger: {
+        trigger: ".page2 .overlay .second",
+        scroller: "#main",
+        scrub: true,
+        start: "3000% top",
+       end: "3000% -80%",
+        
+      }
+    }
+    ).to(".page2 .overlay .four", {
+     top:'52%',
+          scrollTrigger: {
+            trigger: ".page2 .overlay .second",
+            scroller: "#main",
+            scrub: true,
+            start: "4800% top",
+           end: "4800% -300%",
+          
+          
+            
+          }
+        }
+        )
+        .to(".page2 .overlay .four", {
+          scale: '2',
+          left:'37%',
+           fontFamily: "'montserrat', 'sans-serif'",
+           fontWeight: '700',
+               scrollTrigger: {
+                 trigger: ".page2 .overlay .second",
+                 scroller: "#main",
+                 scrub: true,
+                 start: "5800% top",
+                end: "5800% -80%",
+                markers:true
+               
+          
+         
+               }
+             }
+             )
 // var page2Animations = [
 //   { element: ".page2 .overlay .yrs1", start: '17300% top', end: '17300% -80%' },
 //   { element: ".page2 .overlay .yrs2", start: '17340% top', end: '17340% -80%' },
@@ -792,10 +850,6 @@ const t3 = gsap.timeline({
     scrub: 1,
     start: '280% top',
     end: 'top -50%',
-
-
-
-
   },
 });
 
@@ -813,8 +867,6 @@ const t4 = gsap.timeline({
     scrub: 1,
     start: '190% top',
     end: 'top -35%',
-
-
 
 
   },
@@ -915,17 +967,18 @@ th1.to(".th h5", {
   //   });
   // }
 })
-// gsap.to(".th h5", {
-//   transform: "translate(73%,-50%)",
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".th h5",
-//     scroller: "#main",
-//     scrub: true,
-//     start: "4200% top",
-//     end: "4200% -50%",
-//   }
-// })
+gsap.to(".th h5", {
+  transform: "translate(46%,-30%)",
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".th h5",
+    scroller: "#main",
+    scrub: true,
+    start: "3750% top",
+    end: "3750% -50%",
+    
+  }
+})
 
 
 
@@ -975,7 +1028,7 @@ var etu1 = gsap.timeline();
 etu1.to(".etu h5", {
   top: '30%',
   scale: 0.4,
-  transform: 'translateX(30%)',
+  left:'19.6%',
   fontWeight: '300',
   ease: "sine.out",
   scrollTrigger: {
@@ -1004,17 +1057,18 @@ etu1.to(".etu h5", {
 // })
 
 
-// gsap.to(".etu h5", {
-//   transform: "translate(52%,-100%)",
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".th h5",
-//     scroller: "#main",
-//     scrub: true,
-//     start: "4200% top",
-//     end: "4200% -70%",
-//   }
-// })
+gsap.to(".etu h5", {
+  transform: "translate(0%,-50%)",
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".th h5",
+    scroller: "#main",
+    scrub: true,
+    start: "3750% top",
+    end: "3750% -70%",
+    
+  }
+})
 
 
 // -------------------------------bsp start animation-------------------------------------------------------------------------------
@@ -1050,7 +1104,8 @@ bsp.to(".bsp h5", {
   top: '40%',
   scale: 0.6,
   fontWeight: 600,
-  transform: 'translateX(60%)',
+  left: '28.8%',
+  // transform: 'translateX(60%)',
   ease: "sine.out",
   scrollTrigger: {
     trigger: ".bsp h5",
@@ -1076,17 +1131,18 @@ bsp.to(".bsp h5", {
 });
 
 
-// gsap.to(".bsp h5", {
-//   transform: "translate(84%,-150%)",
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".th h5",
-//     scroller: "#main",
-//     scrub: true,
-//     start: "4200% top",
-//     end: "4200% -110%",
-//   }
-// })
+gsap.to(".bsp h5", {
+  transform: "translate(1%,-80%)",
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".th h5",
+    scroller: "#main",
+    scrub: true,
+    start: "3750% top",
+    end: "3750% -150%",
+    
+  }
+})
 
 // // ----------------------------------------------------bsp animation end-----------------------------------------------------------------------------
 
@@ -1131,7 +1187,8 @@ elfAnimations.forEach(animation => {
 
 elf.to(".elf h5", {
   top: '55%',
-  transform: 'translateX(32.3%)',
+  // transform: 'translateX(32.3%)',
+  left:'24%',
   scale: 0.6,
   duration: 10,
   fontWeight: 400,
@@ -1157,17 +1214,18 @@ elf.to(".elf h5", {
 // }
 });
 
-// gsap.to(".elf h5", {
-//   transform: "translate(34%,-220%)",
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".th h5",
-//     scroller: "#main",
-//     scrub: true,
-//     start: "4200% top",
-//     end: "4200% -130%",
-//   }
-// });
+gsap.to(".elf h5", {
+  transform: "translate(1%,-150%)",
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".th h5",
+    scroller: "#main",
+    scrub: true,
+    start: "3750% top",
+    end: "3750% -200%",
+  
+  }
+});
 
 // -----------------------------------------------------bns animation start-------------------------------------------------------------------------
 var bns = gsap.timeline();
@@ -1202,7 +1260,8 @@ bnsAnimations.forEach(animation => {
 bns.to(".bns h5", {
   top: '66%',
   scale: '0.9',
-  transform: "translateX(107%)",
+  left:'36.7%',
+  // transform: "translateX(107%)",
   scrollTrigger: {
     trigger: ".bns h5",
     scroller: "#main",
@@ -1212,17 +1271,17 @@ bns.to(".bns h5", {
   }
 });
 
-// gsap.to(".bns h5", {
-//   transform: "translate(106%,-300%)",
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".th h5",
-//     scroller: "#main",
-//     scrub: true,
-//     start: "4200% top",
-//     end: "4200% -200%",
-//   }
-// });
+gsap.to(".bns h5", {
+  transform: "translate(0%,-180%)",
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".th h5",
+    scroller: "#main",
+    scrub: true,
+    start: "3750% top",
+    end: "3750% -220%",
+  }
+});
 
 // ------------------------------------bns animation end------------------------------------------------------------------------------------------------------------
 
@@ -1260,29 +1319,30 @@ swAnimations.forEach(animation => {
 
 
 sw.to(".sw h5", {
-  top: '77%',
+  top: '79%',
   scale: '0.9',
-  transform: "translateX(83.5%)",
   scrollTrigger: {
     trigger: ".bns h5",
     scroller: "#main",
     scrub: 1,
     start: '5100% top',
-    end: '5100% -50%'
+    end: '5100% -50%' 
   }
 });
 
-// gsap.to(".sw h5", {
-//   transform: "translate(81%,-380%)",
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".th h5",
-//     scroller: "#main",
-//     scrub: true,
-//     start: "4200% top",
-//     end: "4200% -270%",
-//   }
-// });
+gsap.to(".sw h5", {
+  transform: "translate(1%,-250%)",
+
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".th h5",
+    scroller: "#main",
+    scrub: true,
+    start: "3750% top",
+    end: "3750% -280%",
+    
+  }
+});
 
 
 
