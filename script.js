@@ -209,9 +209,9 @@ firstt1.to(".page2 .overlay .first", {
     scrollTrigger: {
       trigger: ".bottom-text h2",
       scroller: "#main",
-      scrub: 1,
+      scrub: true,
       start: '1200% top',
-      end: 'top -150%',
+      // end: 'top -150%',
 
     }
   })
@@ -281,9 +281,9 @@ p2s.to(".page2 .overlay .second", {
   scrollTrigger: {
     trigger: ".bottom-text h2",
     scroller: "#main",
-    scrub: 1,
+    scrub: true,
     start: '1200% top',
-    end: 'top -10%',
+    // end: 'top -10%',
 
   }
 })
@@ -1484,7 +1484,7 @@ cm.to(".cm h5", {
 // ------------------------------------cmp animation----------------------------------
 var cmp = gsap.timeline()
 cmp.to(".cm p", {
-  top: '45%',
+  top: '42%',
   opacity: 1,
   scrollTrigger: {
     trigger: ".cm h5",
@@ -1525,7 +1525,7 @@ inp.to(".in h5", {
 })
 
 .to(".in p", {
-  top: '45%',
+  top: '42%',
   opacity: 1,
   scrollTrigger: {
     trigger: ".in h5",
@@ -1588,7 +1588,7 @@ scp.to(".sc h5", {
   },
 })
   .to(".sc p", {
-    top: '45%',
+    top: '42%',
     opacity: 1,
     scrollTrigger: {
       trigger: ".in h5",
@@ -1653,7 +1653,7 @@ ing.to(".ing h5", {
   },
 })
   .to(".ing p", {
-    top: '45%',
+    top: '42%',
     opacity: 1,
     scrollTrigger: {
       trigger: ".ing h5",
@@ -1717,7 +1717,7 @@ imp.to(".imp h5", {
   },
 })
   .to(".imp p", {
-    top: '45%',
+    top: '42%',
     opacity: 1,
     scrollTrigger: {
       trigger: ".imp h5",
@@ -1782,7 +1782,7 @@ trp.to(".tr h5", {
   },
 })
   .to(".tr p", {
-    top: '45%',
+    top: '42%',
     opacity: 1,
     scrollTrigger: {
       trigger: ".tr h5",
@@ -1878,11 +1878,12 @@ trp.to(".tr h5", {
 
     }
   })
-  .to(".page2 .overlay2 ", {
+  .to(".page2 #overlay2 ", {
     opacity: 1,
     scrollTrigger: {
       trigger: ".page2 .overlay .third",
       scroller: "#main",
+
       scrub: true,
       start: "26300% top",
       end: "26300% -100%",
@@ -1926,3 +1927,22 @@ trp.to(".tr h5", {
       end: "26300% -100%",
     },
   })
+
+
+  
+  const contact = document.getElementById("main")
+
+  const contactUs = () => {
+    console.log("jhelo");
+  
+    // Assuming you have already initialized Locomotive Scroll with the variable 'scroll'
+    if (typeof scroll !== 'undefined') {
+      // Use Locomotive Scroll's scrollTo method
+      window.scrollTo(contact, {
+        offset: [0, 0], // You can adjust the offset if needed
+        duration: 1000, // Adjust the duration as needed
+        easing: [0.165, 0.84, 0.44, 1], // Adjust the easing function as needed
+      });
+    }
+  };
+
